@@ -8,6 +8,8 @@ public class TodoApiTest {
 
     @Test(description = "GET /todos/1, deserialize JSON into a POJO, and verify one attribute")
     public void shouldReadTodoAndVerifyTitle() throws Exception {
+        String expectedTitle = "delectus aut autem";
+
         // 1. Send the GET request with Rest Assured.
 
         // 2. Convert the JSON response into a Java object with Jackson.
